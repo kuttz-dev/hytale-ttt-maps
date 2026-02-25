@@ -11,6 +11,6 @@ List of maps with their configuration for [Trouble in Trork Town](https://www.cu
 The maps are not my creation, I only configured them to be used with the mod [Trouble in Trork Town](https://www.curseforge.com/hytale/mods/ttt).
 
 The original maps can be found at:
-- ttt_de_aztec: [https://www.curseforge.com/hytale/prefabs/de-aztec](https://www.curseforge.com/hytale/prefabs/de-aztec)
-- ttt_dust2: [https://www.curseforge.com/hytale/worlds/sand-dust2](https://www.curseforge.com/hytale/worlds/sand-dust2)
-- ttt_mirage: [https://www.curseforge.com/hytale/prefabs/mirage-counter-strike-cs](https://www.curseforge.com/hytale/prefabs/mirage-counter-strike-cs)
+- ttt_de_aztec: [https://www.curseforge.com/hytale/prefabs/de-aztec](https://www.curseforge.com/hytale/prefabs/de-aztec) - dimjhony
+- ttt_dust2: [https://www.curseforge.com/hytale/worlds/sand-dust2](https://www.curseforge.com/hytale/worlds/sand-dust2) - xSpring
+- ttt_mirage: [https://www.curseforge.com/hytale/prefabs/mirage-counter-strike-cs](https://www.curseforge.com/hytale/prefabs/mirage-counter-strike-cs) - Metallunium
