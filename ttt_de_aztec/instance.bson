@@ -1,0 +1,46 @@
+{
+  "Version": 4,
+  "DisplayName": "de_aztec",
+  "WorldGen": {
+    "Type": "Void"
+  },
+  "SpawnProvider": {
+    "Type": "Global",
+    "SpawnPoint": {
+      "X": 69.9,
+      "Y": 91,
+      "Z": 66,
+      "Pitch": 0,
+      "Yaw": 180,
+      "Roll": 0.0
+    }
+  },
+  "IsPvpEnabled": true,
+  "IsTicking": true,
+  "IsBlockTicking": true,
+  "IsGameTimePaused": true,
+  "GameTime": "2026-02-23T12:00:00Z",
+  "IsSavingPlayers": true,
+  "IsSavingChunks": true,
+  "IsUnloadingChunks": true,
+  "DeleteOnRemove": true,
+  "IsSpawningNPC": false,
+  "IsSpawnMarkersEnabled": false,
+  "Death": {
+      "RespawnController": {
+		"Type": "WorldSpawnPoint"
+        },
+        "ItemsLossMode": "All",
+        "ItemsDurabilityLossPercentage": 0
+  },
+  "Plugin": {
+    "Instance": {
+      "RemovalConditions": [
+        {
+          "Type": "WorldEmpty"
+        }
+      ],
+      "PreventReconnection": false
+    }
+  }
+}
