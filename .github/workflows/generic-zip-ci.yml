@@ -125,7 +125,7 @@ jobs:
         id: compress
         run: |
           ZIP_FILE_NAME="${{inputs.artifact_id}}.zip" 
-          zip "$ZIP_FILE_NAME" ${{inputs.files_prefix}}*
+          zip -r "$ZIP_FILE_NAME" ${{inputs.files_prefix}}*
           echo "zip_file_name=$ZIP_FILE_NAME" >> $GITHUB_OUTPUT
           echo "Generated zip file: $ZIP_FILE_NAME"
 
