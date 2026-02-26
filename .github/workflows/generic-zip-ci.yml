@@ -1,13 +1,6 @@
 name: Zip file CI
 
 on:
-  push:
-    branches: [main]
-    tags:
-      - 'v*'
-  pull_request:
-    branches: [main]
-    
   workflow_call:
     inputs:
        artifact-retention-days:
