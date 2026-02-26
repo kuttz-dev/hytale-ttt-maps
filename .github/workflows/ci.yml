@@ -10,27 +10,7 @@ on:
 
 jobs:
   build:
-    uses: ./.github/workflows/gradle-plugin-ci.yml
-
-  publish-modtale:
-    needs: [build, publish, generate-changelog]
-    if: ${{ needs.build.outputs.is_release == 'true' && needs.publish.result == 'success' }}
-    uses: kuttz-dev/hytale-plugin-workflows/.github/workflows/modtale-publish.yml@v1.1.0
+    uses: ./.github/workflows/generic-zip-ci.yml
     with:
-      artifact-id: ${{ inputs.artifact_id }}
-      game-versions: ${{ needs.build.outputs.hytale_server_version }}
-      file-type: "zip"
-    secrets:
-      MODTALE_API_KEY: ${{ secrets.MODTALE_API_KEY }}
-      MODTALE_PROJECT_ID: ${{ secrets.MODTALE_PROJECT_ID }}
-
-  publish-curseforge:
-    needs: [build, publish, generate-changelog]
-    if: ${{ needs.build.outputs.is_release == 'true' && needs.publish.result == 'success' }}
-    uses: kuttz-dev/hytale-plugin-workflows/.github/workflows/curseforge-publish.yml@v1.1.0
-    with:
-      artifact-id: ${{ inputs.artifact_id }}
-      file-type: "zip"
-    secrets:
-      CURSEFORGE_TOKEN: ${{ secrets.CURSEFORGE_TOKEN }}
-      CURSEFORGE_PROJECT_ID: ${{ secrets.CURSEFORGE_PROJECT_ID }}
+      artifact_id: "ttt-maps"
+      files_prefix: "ttt_"

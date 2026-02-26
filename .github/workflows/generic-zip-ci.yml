@@ -17,11 +17,9 @@ on:
        artifact_id:
         description: "Project identifier"
         type: string
-        default: "ttt-maps"
        files_prefix:
         description: "Project identifier"
         type: string
-        default: "ttt_"
 
     secrets:
        MODTALE_API_KEY:
@@ -271,3 +269,25 @@ jobs:
           files: |
             dist/${{ inputs.artifact_id }}-${{ needs.build.outputs.zip_file_name }}
 
+  publish-modtale:
+    needs: [build, publish, generate-changelog]
+    if: ${{ needs.build.outputs.is_release == 'true' && needs.publish.result == 'success' }}
+    uses: kuttz-dev/hytale-plugin-workflows/.github/workflows/modtale-publish.yml@v1.1.0
+    with:
+      artifact-id: ${{ inputs.artifact_id }}
+      game-versions: ${{ needs.build.outputs.hytale_server_version }}
+      file-type: "zip"
+    secrets:
+      MODTALE_API_KEY: ${{ secrets.MODTALE_API_KEY }}
+      MODTALE_PROJECT_ID: ${{ secrets.MODTALE_PROJECT_ID }}
+
+  publish-curseforge:
+    needs: [build, publish, generate-changelog]
+    if: ${{ needs.build.outputs.is_release == 'true' && needs.publish.result == 'success' }}
+    uses: kuttz-dev/hytale-plugin-workflows/.github/workflows/curseforge-publish.yml@v1.1.0
+    with:
+      artifact-id: ${{ inputs.artifact_id }}
+      file-type: "zip"
+    secrets:
+      CURSEFORGE_TOKEN: ${{ secrets.CURSEFORGE_TOKEN }}
+      CURSEFORGE_PROJECT_ID: ${{ secrets.CURSEFORGE_PROJECT_ID }}
