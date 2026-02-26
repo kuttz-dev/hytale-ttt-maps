@@ -4,9 +4,9 @@
 
 Pack of maps with their configuration for [Trouble in Trork Town](https://www.curseforge.com/hytale/mods/ttt); An open-source gamemode for Hytale, inspired by the classic Trouble in Terrorist Town from Garry’s Mod.
 
-To use this you will require the base plugin [Trouble in Trork Town](https://www.curseforge.com/hytale/mods/ttt), and add this maps in the maps templates folder at: /mods/ncode_ttt/maps
+To use this you will require the base plugin [Trouble in Trork Town](https://www.curseforge.com/hytale/mods/ttt), and then add this maps in the maps templates folder at: /mods/ncode_ttt/maps
 
-This maps include the configuration for spawn points, weapon loot spawn points, and some fixes and changes to the maps itself.
+This maps include the configuration for spawn points, weapon loot spawn points with their loot tables, instance configuration, a preview image, and some fixes and changes to the maps itself.
 
 Maps included:
 - ttt_de_aztec
