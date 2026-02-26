@@ -1,4 +1,4 @@
-name: Zip file CI
+name: CI
 
 on:
   push:
