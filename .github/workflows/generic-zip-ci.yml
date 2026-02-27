@@ -247,7 +247,7 @@ jobs:
         run: |
           ls -la
           mkdir dist
-          mv ${{ needs.build.outputs.zip_file_name }} dist/${{ inputs.artifact_id }}-${{ needs.build.outputs.zip_file_name }}
+          mv ${{ needs.build.outputs.zip_file_name }} dist/${{ inputs.artifact_id }}-${{ needs.build.outputs.tag_name }}
           cd dist
           ls -la
 
