@@ -260,7 +260,7 @@ jobs:
           prerelease: ${{ needs.build.outputs.is_prerelease == 'true' }}
           body: ${{ needs.generate-changelog.outputs.changelog }}
           files: |
-            dist/${{ inputs.artifact_id }}-${{ needs.build.outputs.tag_name }}
+            dist/${{ inputs.artifact_id }}-${{ needs.build.outputs.tag_name }}.zip
 
   publish-modtale:
     needs: [build, publish, generate-changelog]
