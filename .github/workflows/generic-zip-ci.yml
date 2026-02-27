@@ -247,7 +247,7 @@ jobs:
         run: |
           ls -la
           mkdir dist
-          mv ${{ needs.build.outputs.zip_file_name }} dist/${{ inputs.artifact_id }}-${{ needs.build.outputs.tag_name }}
+          mv ${{ needs.build.outputs.zip_file_name }} dist/${{ inputs.artifact_id }}-${{ needs.build.outputs.tag_name }}.zip
           cd dist
           ls -la
 
@@ -260,7 +260,7 @@ jobs:
           prerelease: ${{ needs.build.outputs.is_prerelease == 'true' }}
           body: ${{ needs.generate-changelog.outputs.changelog }}
           files: |
-            dist/${{ inputs.artifact_id }}-${{ needs.build.outputs.zip_file_name }}
+            dist/${{ inputs.artifact_id }}-${{ needs.build.outputs.tag_name }}
 
   publish-modtale:
     needs: [build, publish, generate-changelog]
