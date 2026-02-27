@@ -245,9 +245,10 @@ jobs:
       - name: Generate release archive
         if: ${{ success() }}
         run: |
+          VERSION="${${{ needs.build.outputs.tag_name }}#v}"
           ls -la
           mkdir dist
-          mv ${{ needs.build.outputs.zip_file_name }} dist/${{ inputs.artifact_id }}-${{ needs.build.outputs.tag_name }}.zip
+          mv ${{ needs.build.outputs.zip_file_name }} dist/${{ inputs.artifact_id }}-${VERSION}.zip
           cd dist
           ls -la
 
@@ -260,7 +261,7 @@ jobs:
           prerelease: ${{ needs.build.outputs.is_prerelease == 'true' }}
           body: ${{ needs.generate-changelog.outputs.changelog }}
           files: |
-            dist/${{ inputs.artifact_id }}-${{ needs.build.outputs.tag_name }}.zip
+            dist/${{ inputs.artifact_id }}-${${{ needs.build.outputs.tag_name }}#v}.zip
 
   publish-modtale:
     needs: [build, publish, generate-changelog]
