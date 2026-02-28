@@ -1,6 +1,6 @@
 # Trouble in Trork Town - Maps
 
-[![Github Badge](https://img.shields.io/badge/project-github-repo?style=for-the-badge&logo=github)](https://github.com/kuttz-dev/hytale-ttt-maps) [![Discord Support](https://img.shields.io/badge/Support-Discord-5865F2?style=for-the-badge&logo=discord)](https://discord.gg/eECVkthTfQ) [![TTT - Curseforge](https://img.shields.io/badge/TTT-Curseforge-page?style=for-the-badge&logo=curseforge)](https://www.curseforge.com/hytale/mods/ttt) [![TTT Maps - Curseforge](https://img.shields.io/badge/TTT_Maps-Curseforge-page?style=for-the-badge&logo=curseforge)](https://www.curseforge.com/hytale/mods/ttt-maps)
+[![Github Badge](https://img.shields.io/badge/project-github-repo?style=for-the-badge&logo=github)](https://github.com/kuttz-dev/hytale-ttt-maps) [![Discord Support](https://img.shields.io/badge/Support-Discord-5865F2?style=for-the-badge&logo=discord)](https://discord.gg/eECVkthTfQ) [![TTT - Curseforge](https://img.shields.io/badge/TTT-Curseforge-page?style=for-the-badge&logo=curseforge)](https://www.curseforge.com/hytale/mods/ttt) [![TTT Maps - Curseforge](https://img.shields.io/badge/TTT_Maps-Curseforge-page?style=for-the-badge&logo=curseforge)](https://www.curseforge.com/hytale/worlds/ttt-maps)
 
 Pack of maps with their configuration for [Trouble in Trork Town](https://www.curseforge.com/hytale/mods/ttt); An open-source gamemode for Hytale, inspired by the classic Trouble in Terrorist Town from Garry’s Mod.
 
